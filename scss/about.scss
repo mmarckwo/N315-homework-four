@@ -1,0 +1,44 @@
+.about {
+  .topSection {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .banner {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      width: 75%;
+      height: 500px;
+      overflow: hidden;
+    }
+  }
+
+  .bottomSection {
+    h1 {
+      display: flex;
+      justify-content: center;
+      padding-top: 18px;
+    }
+
+    p {
+      //   padding-left: 25%;
+      //   padding-right: 25%;
+      margin: 0 auto;
+      max-width: 1000px;
+      font-size: 18px;
+      padding-bottom: 26px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1175px) {
+  .about {
+    .bottomSection {
+      p {
+        padding-left: 15%;
+        padding-right: 15%;
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+.home {
+  .spacer {
+    height: 75px;
+  }
+
+  .topSection {
+    background-color: rgb(240, 240, 240);
+    padding-top: 16px;
+    padding-bottom: 36px;
+
+    h1 {
+      padding-left: 56px;
+    }
+
+    .flowerRow {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 80%;
+      border-radius: 5px;
+      background-color: rgb(230, 230, 230);
+
+      .flowerItem {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        p {
+          display: flex;
+          justify-content: center;
+          padding-top: 16px;
+          font-size: 18px;
+        }
+
+        .flowerImg {
+          max-width: 200px;
+          height: 200px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .bottomSection {
+    padding-top: 16px;
+    padding-bottom: 36px;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .flowerRow {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      max-width: 80%;
+      border-radius: 5px;
+      background-color: rgb(240, 240, 240);
+
+      .flowerItem {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        p {
+          display: flex;
+          justify-content: center;
+          padding-top: 16px;
+          font-size: 18px;
+        }
+
+        .flowerImg {
+          max-width: 200px;
+          height: 200px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .home {
+    .topSection {
+      .flowerRow {
+        flex-direction: column;
+        max-width: 300px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        .flowerItem {
+          padding-top: 16px;
+          border-bottom: 1px solid gray;
+          margin-bottom: 16px;
+
+          .flowerImg {
+            margin: 0 auto;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+
+    .bottomSection {
+      .flowerRow {
+        flex-direction: column;
+        max-width: 300px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        .flowerItem {
+          padding-top: 16px;
+          border-bottom: 1px solid gray;
+          margin-bottom: 16px;
+
+          .flowerImg {
+            margin: 0 auto;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
